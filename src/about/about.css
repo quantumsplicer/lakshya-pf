@@ -1,0 +1,209 @@
+.about-navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 9vh;
+  padding: 30px 40px 0 0;
+}
+.about-page1 {
+  height: 800px;
+}
+.about-page1-name {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #a58861;
+  text-align: left;
+  padding: 150px 0 0 24vw;
+}
+.about-page1-aboutme {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: norm 0al;
+  font-size: 52px;
+  line-height: 77px;
+  color: black;
+  text-align: left;
+  padding: 0 0 0 24vw;
+}
+.about-page1-intro {
+  display: flex;
+  position: absolute;
+  padding: 100px 9.5vw;
+}
+.about-page1-intro-image {
+  width: 38vw;
+  background-color: #333;
+  background-image: url("../assets/lakshya.png");
+  background-size: cover;
+  filter: grayscale(100%);
+}
+.about-page1-intro-interests {
+  background-color: #191a1e;
+  color: white;
+  width: 32vw;
+  padding: 80px 60px;
+  text-align: left;
+}
+.about-page1-intro-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.about-page1-crazy-heading {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ababab;
+  padding: 80px 0 20px 0;
+}
+.about-page1-crazy-stuff {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-page1-crazy-stuff-individual {
+  width: 190px;
+  padding: 10px 0px;
+}
+.about-page1-crazy-stuff-heading {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+.about-page2 {
+  height: 1200px;
+  background-color: #f0f0f0;
+  padding: 500px 9.5vw 0;
+  text-align: left;
+}
+.about-page2-values-tagline {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #666666;
+  padding-left: 170px;
+}
+.about-page2-values-heading {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 77px;
+  color: #191a1e;
+  padding-left: 170px;
+}
+.about-page2-values-allthoughts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 120px;
+}
+.about-page2-values-individual {
+  width: 282px;
+  padding: 50px 3vw;
+}
+.about-page2-values-individual-heading {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 47px;
+  color: #a58861;
+}
+.about-page2-values-individual-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 174%;
+  color: #666666;
+}
+.about-page2-friends {
+  position: absolute;
+  height: 553px;
+  width: 78vw;
+  background-color: #191a1e;
+  margin-top: 200px;
+}
+.about-page2-friends-tagline {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: white;
+  padding: 64px 0 0 10vw;
+}
+.about-page2-friends-heading {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 77px;
+  color: white;
+  padding: 0 0 0 10vw;
+}
+.about-page3 {
+  padding: 500px 9.5vw 0;
+  text-align: left;
+  height: 1270px;
+  overflow: hidden;
+  margin-bottom: 200px;
+}
+.about-page3-images-col2-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1vw;
+  line-height: 30px;
+  color: #191a1e;
+  padding: 30px 6vw 10px;
+  width: 25vw;
+}
+.about-page2-values-images {
+  display: flex;
+  padding-top: 100px;
+}
+.about-page3-images-col1-image1 {
+  width: 37vw;
+  height: 25vw;
+  margin: 20px;
+  background-color: #aaa;
+  background-image: url("../assets/friends1.png");
+  background-size: contain;
+}
+.about-page3-images-col1-image2 {
+  width: 37vw;
+  height: 29vw;
+  margin: 40px 20px;
+  background-color: #aaa;
+  background-image: url("../assets/friends2.png");
+  background-size: cover;
+}
+.about-page3-images-col2-image1 {
+  width: 37vw;
+  height: 25vw;
+  margin: 40px 20px;
+  background-color: rgb(14, 8, 8);
+  background-image: url("../assets/friends3.png");
+  background-size: cover;
+}
+.about-page3-images-col2-image2 {
+  width: 37vw;
+  height: 28vw;
+  margin: 40px 20px;
+  background-color: #aaa;
+  background-image: url("../assets/friends4.png");
+  background-size: contain;
+}

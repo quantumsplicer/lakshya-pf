@@ -1,0 +1,65 @@
+.contact-navbar {
+  width: 97vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.contact-bw {
+  display: flex;
+  height: 100vh;
+}
+.contact-white {
+  width: 44vw;
+  text-align: left;
+  margin: 150px 1vw 0 5vw;
+}
+.contact-black {
+  width: 42vw;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 66px;
+  line-height: 98px;
+  color: white;
+  text-align: left;
+  padding: 200px 0 0 8vw;
+  background-color: black;
+}
+.contact-white-main-headingminor {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #a58861;
+  padding: 50px 0 20px 170px;
+}
+.contact-white-main-text {
+  font-family: P2ppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #666666;
+  padding: 0 0 20px 170px;
+}
+.contact-white-main-resume {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 33px;
+  color: #191a1e;
+  padding: 50px 0 20px 170px;
+}
+.contact-white-footer {
+  margin: 130px 0 0 -40px;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+.contact-black-line2 {
+  color: #a58861;
+}
