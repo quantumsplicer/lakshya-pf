@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/lakshya-pf/static/css/main.cc78e3d2.chunk.css",
+    "main.js": "/lakshya-pf/static/js/main.081e8645.chunk.js",
+    "main.js.map": "/lakshya-pf/static/js/main.081e8645.chunk.js.map",
+    "runtime-main.js": "/lakshya-pf/static/js/runtime-main.91f288b3.js",
+    "runtime-main.js.map": "/lakshya-pf/static/js/runtime-main.91f288b3.js.map",
+    "static/js/2.96029673.chunk.js": "/lakshya-pf/static/js/2.96029673.chunk.js",
+    "static/js/2.96029673.chunk.js.map": "/lakshya-pf/static/js/2.96029673.chunk.js.map",
+    "index.html": "/lakshya-pf/index.html",
+    "precache-manifest.1b8d793639893630c503272d5f309e86.js": "/lakshya-pf/precache-manifest.1b8d793639893630c503272d5f309e86.js",
+    "service-worker.js": "/lakshya-pf/service-worker.js",
+    "static/css/main.cc78e3d2.chunk.css.map": "/lakshya-pf/static/css/main.cc78e3d2.chunk.css.map",
+    "static/js/2.96029673.chunk.js.LICENSE.txt": "/lakshya-pf/static/js/2.96029673.chunk.js.LICENSE.txt",
+    "static/media/behance.svg": "/lakshya-pf/static/media/behance.85051038.svg",
+    "static/media/dribbble.svg": "/lakshya-pf/static/media/dribbble.23397c61.svg",
+    "static/media/about.css": "/lakshya-pf/static/media/lakshya.a5cc8095.png",
+    "static/media/linkedin.svg": "/lakshya-pf/static/media/linkedin.c040e76d.svg",
+    "static/media/logo.png": "/lakshya-pf/static/media/logo.42733f33.png",
+    "static/media/logo.svg": "/lakshya-pf/static/media/logo.5d5d9eef.svg",
+    "static/media/home.css": "/lakshya-pf/static/media/project5.59d2f937.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91f288b3.js",
+    "static/js/2.96029673.chunk.js",
+    "static/css/main.cc78e3d2.chunk.css",
+    "static/js/main.081e8645.chunk.js"
+  ]
+}
