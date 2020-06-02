@@ -17,7 +17,7 @@ class Home extends Component {
     return (
       <div className="home">
         <div className="home-navbar">
-          <div className="home-navbar-name">Maanav</div>
+          <div className="home-navbar-name">Lakshya</div>
           <div className="home-navbar-freelance">Available For Freelance</div>
           <div className="home-navbar-nav">
             <Link to="/" style={{ textDecoration: "none", color: "#666" }}>
