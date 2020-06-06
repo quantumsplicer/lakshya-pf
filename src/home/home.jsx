@@ -46,13 +46,16 @@ class Home extends Component {
           </div>
         </div>
         <div className="home-page1">
+          <div className="home-page1-logo1">
+            <img src={Logo} class="home-page1-logo1-img"></img>
+          </div>
           <div className="home-page1-introduction">
             <span style={{ color: "#A58861", fontWeight: "bold" }}>
               Hi, I’m Lakshya Singh
             </span>{" "}
             a passionate UI/UX designer focused on producing valuable design
           </div>
-          <div className="home-page1-logo">
+          <div className="home-page1-logo2">
             <img src={Logo}></img>
           </div>
         </div>
@@ -67,7 +70,7 @@ class Home extends Component {
               </div>
             </div>
             <div className="home-page2-whatIdo-box">
-              <img src={Web}></img>
+              <img src={Web} className="home-page2-whatIdo-box-image"></img>
               <div className="home-page2-whatIdo-box-heading">
                 Web Design (UI/UX)
               </div>
@@ -77,14 +80,20 @@ class Home extends Component {
               </div>
             </div>
             <div className="home-page2-whatIdo-box">
-              <img src={Illustration}></img>
+              <img
+                src={Illustration}
+                className="home-page2-whatIdo-box-image"
+              ></img>
               <div className="home-page2-whatIdo-box-heading">Illustration</div>
               <div className="home-page2-whatIdo-box-info">
                 In addition to UI/UX, I also make illustrations and animations.
               </div>
             </div>
             <div className="home-page2-whatIdo-box">
-              <img src={Branding}></img>
+              <img
+                src={Branding}
+                className="home-page2-whatIdo-box-image"
+              ></img>
               <div className="home-page2-whatIdo-box-heading">Branding</div>
               <div className="home-page2-whatIdo-box-info">
                 Solid branding increases brand recognition and builds customer
@@ -92,7 +101,10 @@ class Home extends Component {
               </div>
             </div>
             <div className="home-page2-whatIdo-box">
-              <img src={Prototyping}></img>
+              <img
+                src={Prototyping}
+                className="home-page2-whatIdo-box-image-prototyping"
+              ></img>
               <div className="home-page2-whatIdo-box-heading-prototyping">
                 Prototyping
               </div>
@@ -105,15 +117,21 @@ class Home extends Component {
         </div>
         <div className="home-page3">
           <div className="home-page3-projects">
+            <div className="home-page3-heading1">Work & Projects</div>
             <div className="home-page3-projects-1"></div>
             <div className="home-page3-projects-2"></div>
-            <div className="home-page3-heading">
+            <div className="home-page3-heading2">
               Work <br></br> & Projects
             </div>
             <div className="home-page3-projects-3"></div>
             <div className="home-page3-projects-4"></div>
             <div className="home-page3-projects-5"></div>
           </div>
+          <div className="home-page3-viewmore">View More</div>
+          <br></br>
+          <br></br>
+          <br></br>
+          
           <Footer></Footer>
         </div>
       </div>

@@ -5,6 +5,7 @@
   font-size: 25px;
   line-height: 37px;
   color: rgba(0, 0, 0, 0.49);
+  padding-top: 100px;
 }
 .footer-tagline2 {
   font-family: Space Mono;
@@ -19,8 +20,6 @@
   font-family: Space Mono;
   font-style: normal;
   font-weight: normal;
-  font-size: 52px;
-  line-height: 77px;
   color: #a58861;
   text-shadow: 1px 1px #a58861;
 }
@@ -51,6 +50,8 @@
   display: flex;
   justify-content: space-between;
   padding: 59px 10vw;
+  font-size: 24px;
+  line-height: 36px;
 }
 .footer-contact-part1 {
   width: 50vw;
@@ -66,16 +67,12 @@
   font-family: Space Mono;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 36px;
   color: white;
 }
 .footer-contact-part1-email {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 36px;
   color: #a58861;
   padding-top: 36px;
 }
@@ -96,4 +93,46 @@
 .footer-rights-reserved {
   width: 50vw;
   text-align: right;
+}
+@media only screen and (max-width: 600px) {
+  .footer-tagline1 {
+    font-size: 12.2057px;
+    line-height: 18px;
+  }
+  .footer-tagline2 {
+    font-size: 25.3878px;
+    line-height: 38px;
+  }
+  .footer-getintouch-text {
+    font-size: 10.741px;
+    line-height: 16px;
+    width: 112px;
+    height: 35px;
+  }
+  .footer-contact {
+    display: block;
+    font-size: 14.5185px;
+    line-height: 22px;
+  }
+  .footer-contact-part1 {
+    padding: 0;
+    width: 100%;
+  }
+  .footer-contact-part2 {
+    padding: 40px 0 0 0;
+    width: 100%;
+  }
+  .footer-rights {
+    font-size: 10.3145px;
+    line-height: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .footer-rights-name{
+    display: none;
+  }
+  .footer-rights-reserved{
+    width: 100%;
+    text-align:center;
+  }
 }

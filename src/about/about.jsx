@@ -16,6 +16,9 @@ class About extends Component {
   render() {
     return (
       <div className="about">
+        <div className="about-name">
+          <div className="home-navbar-name ">Lakshya</div>
+        </div>
         <div className="about-navbar">
           <div className="home-navbar-nav">
             <Link to="/" style={{ textDecoration: "none", color: "#666" }}>
@@ -81,7 +84,7 @@ class About extends Component {
                     </div>
                   </div>
                   <div
-                    className="about-page1-crazy-stuff-individual"
+                    className="about-page1-crazy-stuff-individual about-page1-crazy-stuff-individual-people"
                     style={{ width: "100px" }}
                   >
                     <img
@@ -189,21 +192,27 @@ class About extends Component {
             For me, people matters the most
           </div>
           <div className="about-page2-values-heading">Bit about myself</div>
+          <div className="about-page3-images-col2-text1">
+            Whether it is family, friends , bussiness relationships, the people
+            around me always had a great impact on me. I love talking to others,
+            know their stories and get inspired.
+          </div>
           <div className="about-page2-values-images">
             <div className="about-page3-images-col1">
               <div className="about-page3-images-col1-image1"></div>
               <div className="about-page3-images-col1-image2"></div>
             </div>
             <div className="about-page2-values-images-col2">
-              <div className="about-page3-images-col2-text">
+              <div className="about-page3-images-col2-text2">
                 Whether it is family, friends , bussiness relationships, the
                 people around me always had a great impact on me. I love talking
                 to others, know their stories and get inspired.
               </div>
-              <div className="about-page3-images-col2-image1"></div>
+              <div className="about-page3-images-col2-image11"></div>
               <div className="about-page3-images-col2-image2"></div>
             </div>
           </div>
+          <div className="about-page3-images-col2-image12"></div>
         </div>
         <Footer />
       </div>

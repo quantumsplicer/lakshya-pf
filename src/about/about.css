@@ -5,6 +5,13 @@
   height: 9vh;
   padding: 30px 40px 0 0;
 }
+.about-name {
+  display: none;
+  width: 100%;
+  height: 9vh;
+  text-align: left;
+  padding: 30px 0vw 0px 0vw;
+}
 .about-page1 {
   height: 800px;
 }
@@ -54,7 +61,6 @@
   font-size: 20px;
   line-height: 35px;
 }
-
 .about-page1-crazy-heading {
   font-family: Space Mono;
   font-style: normal;
@@ -157,11 +163,22 @@
 .about-page3 {
   padding: 500px 9.5vw 0;
   text-align: left;
-  height: 1270px;
+  height: 100%;
   overflow: hidden;
   margin-bottom: 200px;
 }
-.about-page3-images-col2-text {
+.about-page3-images-col2-text1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #191a1e;
+  padding: 70px 12vw 50px;
+  width: 80vw;
+  display: none;
+}
+.about-page3-images-col2-text2 {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -191,13 +208,22 @@
   background-image: url("../assets/friends2.png");
   background-size: cover;
 }
-.about-page3-images-col2-image1 {
+.about-page3-images-col2-image11 {
   width: 37vw;
   height: 25vw;
   margin: 40px 20px;
   background-color: rgb(14, 8, 8);
   background-image: url("../assets/friends3.png");
   background-size: cover;
+}
+.about-page3-images-col2-image12 {
+  width: 37vw;
+  height: 25vw;
+  margin: 40px 20px;
+  background-color: rgb(14, 8, 8);
+  background-image: url("../assets/friends3.png");
+  background-size: cover;
+  display: none;
 }
 .about-page3-images-col2-image2 {
   width: 37vw;
@@ -206,4 +232,153 @@
   background-color: #aaa;
   background-image: url("../assets/friends4.png");
   background-size: contain;
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-name {
+    display: block;
+  }
+  .about-page1 {
+    height: 100%;
+  }
+  .about-page1-name {
+    padding: 0 0 0 10vw;
+  }
+  .about-page1-aboutme {
+    padding: 0 0 0 10vw;
+  }
+  .about-page1-intro {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  .about-page1-intro-image {
+    height: 89vw;
+    width: 100%;
+    background-size: contain;
+  }
+  .about-page1-intro-interests {
+    width: auto;
+  }
+  .about-page1-crazy-stuff-individual-people {
+    width: 190px !important;
+  }
+  .about-page2 {
+    height: 100%;
+    padding: 100px 0 0 0;
+  }
+  .about-page2-values-tagline {
+    padding-left: 9.5vw;
+  }
+  .about-page2-values-heading {
+    padding-left: 9.5vw;
+  }
+  .about-page2-friends {
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+  }
+  .about-page2-values-allthoughts {
+    padding: 120px 9.5vw;
+  }
+  .about-page3 {
+    padding: 150px 0 0 0;
+  }
+  .about-page3-images-col2-text1 {
+    display: block;
+  }
+  .about-page3-images-col2-text2 {
+    display: none;
+  }
+  .about-page2-values-images {
+    padding: 0 9.5vw;
+  }
+  .about-page3-images-col2-image11 {
+    display: none;
+  }
+  .about-page3-images-col2-image12 {
+    display: block;
+    margin: 5px 9.5vw;
+    width: 81.3vw;
+    height: 50vw;
+  }
+  .about-page3-images-col2-image2 {
+    width: 40vw;
+    height: 54.5vw;
+    margin: 5px 5px;
+    background-color: #aaa;
+    background-image: url("../assets/friends5.png");
+    background-size: cover;
+  }
+  .about-page3-images-col1-image1 {
+    margin: 5px 5px 5px 0px;
+    width: 40vw;
+  }
+  .about-page3-images-col1-image2 {
+    margin: 5px 5px 5px 0px;
+    width: 40vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about-page1-name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .about-page1-aboutme {
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .about-page1-intro-interests {
+    padding: 60px 40px;
+  }
+  .about-page1-intro-text {
+    font-size: 16px;
+    line-height: 173.5%;
+  }
+  .about-page1-crazy-heading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .about-page1-crazy-stuff-heading {
+    font-size: 15.1351px;
+    line-height: 22px;
+  }
+  .about-page1-crazy-stuff-individual {
+    width: 120px !important;
+  }
+  .about-page2-values-tagline {
+    font-size: 14.0113px;
+    line-height: 21px;
+  }
+  .about-page2-values-heading {
+    font-size: 29.774px;
+    line-height: 44px;
+  }
+  .about-page2-values-individual {
+    padding: 15px 3vw;
+  }
+  .about-page2-values-individual-heading {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .about-page2-values-individual-text {
+    font-size: 12px;
+    padding-top: 10px;
+    line-height: 174%;
+  }
+  .about-page2-friends-tagline {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .about-page2-friends-heading {
+    font-size: 30px;
+    line-height: 44px;
+  }
+  .about-page3-images-col2-text1 {
+    font-size: 13.7204px;
+    line-height: 21px;
+  }
 }

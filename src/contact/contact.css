@@ -1,3 +1,15 @@
+.home-navbar-black {
+  width: 100%;
+  height: 9vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0vw 0px 0vw;
+  background-color: black;
+  display: none;
+}
+.home-navbar-name-black {
+  color: white;
+}
 .contact-navbar {
   width: 97vw;
   display: flex;
@@ -11,9 +23,21 @@
 .contact-white {
   width: 44vw;
   text-align: left;
-  margin: 150px 1vw 0 5vw;
+  margin: 150px 1vw 0 4vw;
 }
-.contact-black {
+.contact-black-1 {
+  /* width: 100%; */
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 66px;
+  line-height: 98px;
+  color: white;
+  text-align: left;
+  background-color: black;
+  display: none;
+}
+.contact-black-2 {
   width: 42vw;
   font-family: Space Mono;
   font-style: normal;
@@ -25,6 +49,23 @@
   padding: 200px 0 0 8vw;
   background-color: black;
 }
+.contact-1 {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #666666;
+  padding-left: 10vw;
+}
+.contact-2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 77px;
+  color: #191a1e;
+  padding-left: 10vw;
+}
 .contact-white-main-headingminor {
   font-family: Space Mono;
   font-style: normal;
@@ -32,16 +73,16 @@
   font-size: 20px;
   line-height: 30px;
   color: #a58861;
-  padding: 50px 0 20px 170px;
+  padding: 50px 0 20px 10vw;
 }
 .contact-white-main-text {
-  font-family: P2ppins;
+  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
   color: #666666;
-  padding: 0 0 20px 170px;
+  padding: 0 0 20px 10vw;
 }
 .contact-white-main-resume {
   font-family: Space Mono;
@@ -50,7 +91,7 @@
   font-size: 22px;
   line-height: 33px;
   color: #191a1e;
-  padding: 50px 0 20px 170px;
+  padding: 50px 0 20px 10vw;
 }
 .contact-white-footer {
   margin: 130px 0 0 -40px;
@@ -62,4 +103,77 @@
 }
 .contact-black-line2 {
   color: #a58861;
+}
+@media only screen and (max-width: 1000px) {
+  .home-navbar-black {
+    display: flex;
+  }
+  .contact-navbar {
+    display: none;
+  }
+  .contact-black-2 {
+    display: none;
+    width: 100%;
+  }
+  .contact-black-1 {
+    width: 100%;
+    display: block;
+    height: 100%;
+  }
+  .contact-bw {
+    display: block;
+  }
+  .contact-white {
+    width: 100%;
+    margin: 150px 1vw 0 0vw;
+  }
+  .contact-black-line1 {
+    padding: 400px 0 0 8vw;
+  }
+  .contact-black-line2 {
+    padding: 0 0 0 8vw;
+  }
+  .contact-white-footer {
+    margin: 130px 0 20px 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home-navbar-name-black {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .contact-black-line1 {
+    font-size: 38.7719px;
+    line-height: 57px;
+  }
+  .contact-black-line2 {
+    font-size: 38.7719px;
+    line-height: 57px;
+  }
+  .contact-1 {
+    font-size: 16.1px;
+    line-height: 24px;
+  }
+  .contact-2 {
+    font-size: 34.8833px;
+    line-height: 52px;
+  }
+  .contact-white-main-headingminor {
+    font-size: 13.4167px;
+    line-height: 20px;
+  }
+  .contact-white-main-text {
+    font-size: 13.4167px;
+    line-height: 20px;
+  }
+  .contact-white-main-resume {
+    font-size: 14.7583px;
+    line-height: 22px;
+  }
+  .contact-white-footer {
+    font-size: 10.3145px;
+    line-height: 15px;
+    text-align:center;
+    margin-left:0;
+  }
 }

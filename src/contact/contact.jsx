@@ -8,6 +8,9 @@ import { Link } from "react-router-dom";
 export default function Contact() {
   return (
     <div className="contact">
+      <div className="home-navbar-black">
+        <div className="home-navbar-name home-navbar-name-black">Lakshya</div>
+      </div>
       <div
         className="contact-navbar about-navbar"
         style={{ position: "Absolute" }}
@@ -42,10 +45,16 @@ export default function Contact() {
         </div>
       </div>
       <div className="contact-bw">
+        <div className="contact-black-1">
+          <div className="contact-black-line1">Don't be shy,</div>
+          <div className="contact-black-line2">say Hi.</div>
+        </div>
         <div className="contact-white">
           <div className="contact-white-main">
-            <div className="about-page2-values-tagline">Contact</div>
-            <div className="about-page2-values-heading">Get in touch :</div>
+            <div className="about-page2-values-tagline contact-1">Contact</div>
+            <div className="about-page2-values-heading contact-2">
+              Get in touch :
+            </div>
             <div className="contact-white-main-headingminor">
               Contact Details
             </div>
@@ -64,7 +73,7 @@ export default function Contact() {
             ©2019 · LAKSHYA SINGH · ALL WRONGS REVERSED
           </div>
         </div>
-        <div className="contact-black">
+        <div className="contact-black-2">
           <div className="contact-black-line1">Don't be shy,</div>
           <div className="contact-black-line2">say Hi.</div>
         </div>
