@@ -5,6 +5,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 30px 0vw 0px 0vw;
+  position: relative;
+  /* position: absolute; */
+  z-index: 2;
 }
 .home-navbar-name {
   font-family: Poppins;
@@ -37,6 +40,57 @@
   color: #666;
   text-decoration: none;
   padding-right: 2vw;
+}
+.home-navbar-ham {
+  width: 40px;
+  height: 30px;
+  display: none;
+  line-height: 5px;
+  padding-right: 5vw;
+  cursor: pointer;
+}
+.home-navbar-ham1 {
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #666;
+}
+.home-navbar-ham2 {
+  width: 14px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #666;
+  margin-left: 14px;
+}
+.home-navbar-fullscreen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #191a1e;
+  margin-top: 10vh;
+  flex-direction: column;
+}
+.home-navbar-fullscreen-ham {
+  margin: 15vh 0 0 50vw;
+  /* width:100vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  /* text-align:; */
+}
+.home-navbar-fullscreen-ham-option {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  width: 170px;
+  /* text-align:right; */
+  display: flex;
+  justify-content: right;
 }
 .home-page1 {
   /* width: 100vw; */
@@ -71,7 +125,10 @@
 }
 @media only screen and (max-width: 1000px) {
   .home-navbar {
-    width: 88vw;
+    /* position:fixed; */
+  }
+  .home-navbar-ham {
+    display: block;
   }
   .home-page1-logo2 {
     display: none;
@@ -97,9 +154,18 @@
   }
   .home-page1-navigation {
     display: none;
+    padding: 40vh 0 120px 8vw;
+  }
+  .home-page1-navigation-image1{
+    width:17px;
+    height: 17px;
   }
 }
 @media only screen and (max-width: 600px) {
+  .home-navbar-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
   .home-page1-introduction {
     line-height: 8vw;
     padding: 50px 1vw 100px 10vw;
@@ -109,6 +175,9 @@
   }
   .home-page1-logo1 {
     padding-top: 50px;
+  }
+  .home-navbar-fullscreen-ham{
+    margin: 15vh 0 0 40vw;
   }
 }
 .home-page2 {
@@ -275,12 +344,12 @@
   padding: 60px 5vw;
   text-align: left;
 }
-.home-page3-viewmore{
+.home-page3-viewmore {
   display: none;
 }
 @media only screen and (max-width: 600px) {
   .home-page3-projects {
-    padding:  20px 10vw 0px;
+    padding: 20px 10vw 0px;
   }
   .home-page3-heading1 {
     display: block;

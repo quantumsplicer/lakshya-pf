@@ -12,13 +12,65 @@ import Interlock from "../assets/interlock.png";
 import { Link } from "react-router-dom";
 
 class About extends Component {
-  state = {};
+  state = {
+    activePage: "about",
+    activeHam: false,
+  };
+
+  myfunc = () => {
+    if (this.state.activeHam === false) {
+      console.log(1);
+      this.setState({
+        activeHam: true,
+      });
+    } else {
+      this.setState({
+        activeHam: false,
+      });
+    }
+  };
+
   render() {
     return (
       <div className="about">
-        <div className="about-name">
-          <div className="home-navbar-name ">Lakshya</div>
+        <div
+          className="about-name"
+          style={{
+            backgroundColor: this.state.activeHam ? "#191A1E" : "white",
+            position: this.state.activeHam ? "fixed" : "relative",
+            display: "flex",
+          }}
+        >
+          <div
+            className="home-navbar-name"
+            style={{ color: this.state.activeHam ? "white" : "#666" }}
+          >
+            Lakshya
+          </div>
+          <div className="home-navbar-ham" onClick={this.myfunc}>
+            <div
+              className="home-navbar-ham1"
+              style={{
+                backgroundColor: this.state.activeHam ? "white" : "#666",
+              }}
+            ></div>
+            <br></br>
+            <div
+              className="home-navbar-ham2"
+              style={{
+                backgroundColor: this.state.activeHam ? "white" : "#666",
+              }}
+            ></div>
+            <br></br>
+            <div
+              className="home-navbar-ham1"
+              style={{
+                backgroundColor: this.state.activeHam ? "white" : "#666",
+              }}
+            ></div>
+          </div>
         </div>
+        
         <div className="about-navbar">
           <div className="home-navbar-nav">
             <Link to="/" style={{ textDecoration: "none", color: "#666" }}>
@@ -33,6 +85,18 @@ class About extends Component {
             >
               <div className="home-navbar-nav-contact">Contact</div>
             </Link>
+          </div>
+        </div>
+        <div
+          className="home-navbar-fullscreen"
+          style={{ display: this.state.activeHam ? "flex" : "none", }}
+        >
+          <div className="home-navbar-fullscreen-ham">
+            <Link to="/" style={{textDecoration:"none"}}><div className="home-navbar-fullscreen-ham-option" >Home</div></Link>  
+            <Link to="" style={{textDecoration:"none"}}><div className="home-navbar-fullscreen-ham-option">Services</div></Link>
+            <Link to="" style={{textDecoration:"none"}}><div className="home-navbar-fullscreen-ham-option">My Work</div></Link>
+            <Link to="/about" style={{textDecoration:"none"}}><div className="home-navbar-fullscreen-ham-option" style={{color: "#A58861"}}>About Me</div></Link>
+            <Link to="/contact" style={{textDecoration:"none"}}><div className="home-navbar-fullscreen-ham-option">Contact</div></Link>
           </div>
         </div>
         <div className="home-page1-navigation">

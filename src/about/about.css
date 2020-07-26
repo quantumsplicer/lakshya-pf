@@ -1,11 +1,12 @@
 .about-navbar {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
   height: 9vh;
   padding: 30px 40px 0 0;
+  position:absolute;
 }
 .about-name {
+  justify-content: space-between;
+  align-items: center;
   display: none;
   width: 100%;
   height: 9vh;
@@ -14,6 +15,9 @@
 }
 .about-page1 {
   height: 800px;
+  position: relative;
+  z-index: -1;
+  padding-top: 9vh;
 }
 .about-page1-name {
   font-family: Space Mono;
@@ -24,11 +28,12 @@
   color: #a58861;
   text-align: left;
   padding: 150px 0 0 24vw;
+  /* position: absolute; */
 }
 .about-page1-aboutme {
   font-family: Space Mono;
   font-style: normal;
-  font-weight: norm 0al;
+  font-weight: normal;
   font-size: 52px;
   line-height: 77px;
   color: black;

@@ -12,12 +12,40 @@ import Prototyping from "../assets/prototyping.png";
 import { Link } from "react-router-dom";
 
 class Home extends Component {
-  state = {};
+  state = {
+    activeHam: false,
+    activePage: "home",
+  };
+
+  myfunc = () => {
+    if (this.state.activeHam === false) {
+      console.log(1);
+      this.setState({
+        activeHam: true,
+      });
+    } else {
+      this.setState({
+        activeHam: false,
+      });
+    }
+  };
+
   render() {
     return (
       <div className="home">
-        <div className="home-navbar">
-          <div className="home-navbar-name">Lakshya</div>
+        <div
+          className="home-navbar"
+          style={{
+            backgroundColor: this.state.activeHam ? "#191A1E" : "white",
+            position: this.state.activeHam ? "fixed" : "relative",
+          }}
+        >
+          <div
+            className="home-navbar-name"
+            style={{ color: this.state.activeHam ? "white" : "#666" }}
+          >
+            Lakshya
+          </div>
           <div className="home-navbar-freelance">Available For Freelance</div>
           <div className="home-navbar-nav">
             <Link to="/" style={{ textDecoration: "none", color: "#666" }}>
@@ -33,16 +61,53 @@ class Home extends Component {
               <div className="home-navbar-nav-contact">Contact</div>
             </Link>
           </div>
+          <div className="home-navbar-ham" onClick={this.myfunc}>
+            <div
+              className="home-navbar-ham1"
+              style={{
+                backgroundColor: this.state.activeHam ? "white" : "#666",
+              }}
+            ></div>
+            <br></br>
+            <div
+              className="home-navbar-ham2"
+              style={{
+                backgroundColor: this.state.activeHam ? "white" : "#666",
+              }}
+            ></div>
+            <br></br>
+            <div
+              className="home-navbar-ham1"
+              style={{
+                backgroundColor: this.state.activeHam ? "white" : "#666",
+              }}
+            ></div>
+          </div>
         </div>
-        <div className="home-page1-navigation">
+        <div
+          className="home-navbar-fullscreen"
+          style={{ display: this.state.activeHam ? "flex" : "none" }}
+        >
+          <div className="home-navbar-fullscreen-ham">
+            <Link to="/" style={{textDecoration:"none"}}><div className="home-navbar-fullscreen-ham-option" style={{color: "#A58861"}}>Home</div></Link>  
+            <Link to="" style={{textDecoration:"none"}}><div className="home-navbar-fullscreen-ham-option">Services</div></Link>
+            <Link to="" style={{textDecoration:"none"}}><div className="home-navbar-fullscreen-ham-option">My Work</div></Link>
+            <Link to="/about" style={{textDecoration:"none"}}><div className="home-navbar-fullscreen-ham-option">About Me</div></Link>
+            <Link to="/contact" style={{textDecoration:"none"}}><div className="home-navbar-fullscreen-ham-option">Contact</div></Link>
+          </div>
+        </div>
+        <div
+          className="home-page1-navigation"
+          style={{ display: this.state.activeHam ? "block" : "none" }}
+        >
           <div className="home-page1-navigation-image">
-            <img src={Behance}></img>
+            <img src={Behance} className="home-page1-navigation-image1"></img>
           </div>
           <div className="home-page1-navigation-image">
-            <img src={Dribbble}></img>
+            <img src={Dribbble} className="home-page1-navigation-image1"></img>
           </div>
           <div className="home-page1-navigation-image">
-            <img src={Lin}></img>
+            <img src={Lin} className="home-page1-navigation-image1"></img>
           </div>
         </div>
         <div className="home-page1">
@@ -131,7 +196,7 @@ class Home extends Component {
           <br></br>
           <br></br>
           <br></br>
-          
+
           <Footer></Footer>
         </div>
       </div>
